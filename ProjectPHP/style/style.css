@@ -1,0 +1,264 @@
+/* This is css for home page and other pages header section only because header style is same in each page */
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{margin:0;}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: rgb(200, 200, 200);
+    background-color: rgb(50, 50, 50);
+    margin: 0;
+    width: -webkit-fill-available;
+}
+
+#iphone{
+    flex:1;
+    margin: 0;
+    padding-left: 5px;
+    
+}
+
+nav{flex: 4;}
+
+#menu{
+    display: none;
+}
+
+.navLink a{
+    text-decoration: none;
+    color: rgb(200, 200, 200);
+    font-size: smaller;
+    transition: color 1s ease;
+}
+
+.navLink a:hover{
+    color:blue;
+}
+
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+
+}
+
+nav ul li{margin: auto;}
+
+
+#homeImage{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+#powerhouse{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 75px;
+    color: white;
+    text-align:center;
+    
+}
+
+
+#shop{
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    border: 5px solid rgb(50, 50, 50);
+    border-radius: 20px;
+    color: white;
+    background-color: rgb(50, 50, 50);
+    text-decoration: none;
+    transition: border 1s, color 1s;
+    text-align: center;
+    padding: 5px;
+}
+
+#shop:hover{
+    /* border: 10px solid black; */
+    color:blue;
+}
+
+
+
+
+#iphone13{
+    text-align: center;
+    margin-top: 100px;
+}
+
+#iphone13 a{
+    text-decoration: none;
+    font-size: larger;
+}
+
+#iphone13 div{
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+#iphone13 p{
+    font-size:x-large;
+    font-weight:500;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+#iphone13Image{
+    height: 110%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+#iphone12{
+    text-align: center;
+    margin-top: 100px;
+}
+
+#iphone12 a{
+    text-decoration: none;
+    font-size: larger;
+}
+
+#iphone12 div{
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+#iphone12 p{
+    font-size:x-large;
+    font-weight:500;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+#iphone12Image{
+    margin-top: 10px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+#iphone11{
+    text-align: center;
+    margin-top: 100px;
+}
+
+#iphone11 a{
+    text-decoration: none;
+    font-size: larger;
+}
+
+#iphone11 div{
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+#iphone11 p{
+    font-size:x-large;
+    font-weight:500;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+#iphone11Image{
+    margin-top: 10px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+
+/* Moblibe view */
+
+@media screen and (max-width: 500px) {
+
+    /* header{
+        flex-direction: column;
+        align-items: center; 
+        text-align:center;
+    } */
+
+
+    #iphone, nav{
+        margin-top: 10px;
+        /* text-align:
+        center; */
+    }
+    
+    nav{
+        margin-left: 50px;
+        margin-right: 30px;
+        text-align: end;
+    }
+
+    nav ul{
+        flex-direction: column;
+        margin: 10px 0 10px 0;
+        padding: 10px;
+    }
+
+    nav:hover .navLink{
+        display: block;
+    }
+
+    nav ul li{
+        margin: 10px;
+        
+    }
+
+    #powerhouse{
+        font-size: 40px;
+    }
+    
+    
+    #shop{
+        font-size: 30px;
+        border: 2px solid rgb(50, 50, 50);
+    }
+    
+    /* #shop:hover{
+        border: 5px solid black;
+    }     */
+
+    #menu{
+        display: block;
+        /* text-align: end;
+        margin-right: 30px; */
+        font-size: larger;
+        cursor: pointer;
+    }
+
+    #menu:hover .navLink{
+        display: block;
+    }
+
+    .navLink {
+        display: none;
+        z-index: 1;
+        position: absolute;
+        text-align: center;
+        right: 5px;
+        background-color: rgb(50, 50, 50);
+        margin-top: 0;
+        padding-top: 0;
+    }
+}
